@@ -1,0 +1,77 @@
+//FONTS
+
+@font-face {
+  font-family: "NotoBlack";
+  src: url("./assets/fonts/NotoSans-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NotoBold";
+  src: url("./assets/fonts/NotoSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NotoReg";
+  src: url("./assets/fonts/NotoSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SanBlack";
+  src: url("./assets/fonts/Sancoale\ Softened\ Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SanBold";
+  src: url("./assets/fonts/Sancoale\ Softened\ Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SanReg";
+  src: url("./assets/fonts/Sancoale\ Softened\ Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SanSoft";
+  src: url("./assets/fonts/Sancoale\ Softened.ttf") format("truetype");
+}
+
+/////////////////////////////////////////
+
+//COLORS
+
+$white: #ffffff;
+$black: #000000;
+$blue: #3047b0;
+$pink: #ff0082;
+$violet: #780096;
+//GRADIENT
+$gradientLight: #ff0082;
+$gradientDark: #780096;
+
+//CONST STYYLES
+.maincontainer {
+  width: auto;
+  margin: 0 6vw;
+  //   border: 2px solid yellow;
+  //   height: 100%;
+}
+
+.button {
+  cursor: pointer;
+  width: 300px;
+  height: 50px;
+  border-radius: 123px;
+  //   background: transparent;
+  text-align: center;
+  font-family: "NotoBold";
+  font-size: 1.25rem;
+  border: 1px solid $violet;
+  //gradient text
+  color: white;
+  background: -webkit-linear-gradient(45deg, $gradientLight, $gradientDark);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.4s ease-in;
+  &:hover {
+    transition: 0.4s ease-in;
+    -webkit-background-clip: text;
+    background: -webkit-linear-gradient(45deg, $gradientLight, $gradientDark);
+    -webkit-text-fill-color: $white;
+    border: none;
+    transform: scale(1.05);
+  }
+}
