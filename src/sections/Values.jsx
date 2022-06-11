@@ -4,7 +4,7 @@ import ValuesImg from "../assets/images/values.jfif";
 const Values = () => {
   return (
     <section id="values">
-      <div className="maincontainer-noMargin">
+      <div className="maincontainer-margin-right">
         <div className="values__content">
           <div className="values__content-image">
             <img src={ValuesImg} alt="" />

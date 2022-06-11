@@ -432,3 +432,78 @@ body {
   font-size: 1.125rem;
   padding: 2rem;
 }
+
+///////////////////////////////////////////
+//CSR
+/////////////////////////////////////////
+
+.csr__content-info--description {
+  font-family: "NotoReg";
+  font-size: 1.125rem;
+  padding: 2rem 0;
+}
+.csr__content {
+  padding: 5rem 0 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.csr__content-stats {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+
+  &--cert {
+    max-width: 150px;
+  }
+  &--cert img {
+    width: 100%;
+  }
+  &--procentage {
+    // width: 100%;
+    gap: 8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.procentage-number {
+  font-family: "SanBlack";
+  font-size: 5.5rem;
+}
+.procentage-text {
+  font-family: "SanSoft";
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.csr__content-image {
+  width: 100%;
+  position: relative;
+  &:before {
+    position: absolute;
+    right: 0;
+    top: -10%;
+    content: "";
+    width: 70%;
+    height: 120%;
+    background-color: $blue;
+    z-index: -1;
+  }
+}
+.csr__content-image img {
+  width: 100%;
+}
+//////////////////////////////////
+//JOBS
+//////////////////////////////////
+.jobs__buttons {
+  padding: 5rem 0 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}

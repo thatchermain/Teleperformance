@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "../components/Slider";
+import ImageSlider from "../components/ImageSlider";
 
 const Benefits = () => {
   return (
@@ -11,7 +11,7 @@ const Benefits = () => {
             Nie lubisz granic? U nas ich nie znajdziesz
           </h2>
           <div className="benefits__slider ">
-            <Slider />
+            <ImageSlider />
           </div>
         </div>
       </div>

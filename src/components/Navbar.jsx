@@ -33,7 +33,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="navbar__item">
-              <a className="navbar__link" href="#praca">
+              <a className="navbar__link" href="#jobs">
                 Oferty pracy
               </a>
             </li>
@@ -44,7 +44,7 @@ const Navbar = () => {
               //   isOpen={isOpen}
               //   setIsOpen={setIsOpen}
             >
-              <a className="navbar__link" href="#kontakt">
+              <a className="navbar__link" href="#contakt">
                 Kontakt
               </a>
             </li>
