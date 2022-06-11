@@ -271,3 +271,58 @@ body {
   text-align: center;
   padding: 2rem;
 }
+///////////////////////////////////////////
+//VALUES
+/////////////////////////////////////////
+
+.values__content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  gap: 3rem;
+  padding: 10rem 0 0;
+}
+.values__content-image {
+  padding-top: 10rem;
+  width: 100%;
+  // position: absolute;
+}
+.values__content-image img {
+  width: 100%;
+}
+.values__content-info {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: $blue;
+  padding: 4rem 4rem 4rem 4rem;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $blue;
+    z-index: -2;
+    top: 0;
+    left: -20%;
+  }
+  &--title {
+    color: $white;
+    padding-bottom: 2rem;
+  }
+  &--description {
+    color: $white;
+    font-size: 1.125rem;
+    line-height: 27px;
+    font-family: "NotoReg";
+  }
+}
+.values__content-button {
+  display: block;
+  margin: 0 auto 4rem;
+}
+.values__banner {
+  padding: 8rem 0 4rem;
+  text-align: center;
+}

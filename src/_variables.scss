@@ -50,6 +50,10 @@ $gradientDark: #780096;
   //   border: 2px solid yellow;
   //   height: 100%;
 }
+.maincontainer-noMargin {
+  width: auto;
+  margin: 0 12vw 0 0;
+}
 
 .button {
   cursor: pointer;
@@ -81,6 +85,10 @@ $gradientDark: #780096;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 2rem 0;
+}
+.section-name--white {
+  color: $white;
+  font-weight: 400;
 }
 .section-title {
   font-family: "SanSoft";

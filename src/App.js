@@ -4,6 +4,7 @@ import About from "./sections/About";
 import Benefits from "./sections/Benefits";
 import Header from "./sections/Header";
 import Intro from "./sections/Intro";
+import Values from "./sections/Values";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Intro />
       <About />
       <Benefits />
+      <Values />
     </div>
   );
 }
