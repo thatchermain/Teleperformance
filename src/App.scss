@@ -15,7 +15,7 @@ body {
 //NAVBAR
 ///////////////////////////
 .navbar {
-  // position: fixed;
+  position: fixed;
   z-index: 100;
   top: 0;
   width: 100%;
@@ -193,4 +193,67 @@ body {
   padding: 10rem 0;
   margin: 0 auto;
   text-align: center;
+}
+
+///////////////////////////////////////////
+//ABOUT
+/////////////////////////////////////////
+.about__content {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 2rem;
+  padding: 0 0 5rem;
+}
+.about__content-info {
+  width: 100%;
+}
+.about__content-info--title {
+}
+.about__content-info--description {
+  padding: 2rem 0;
+}
+.about__content-button {
+  margin-bottom: 2rem;
+}
+.about__content-stats {
+  position: relative;
+  width: 100%;
+  padding-left: 5rem;
+}
+.about__content-stats--stat {
+  width: 200px;
+  height: 200px;
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &-one {
+    // position: absolute;
+  }
+  &-two {
+    position: absolute;
+    left: 350px;
+    top: 160px;
+  }
+  &-three {
+    position: absolute;
+    top: 300px;
+  }
+}
+.stat-text-gray {
+  font-family: "NotoReg";
+  font-size: 1rem;
+  color: $gray;
+}
+.stat-number {
+  padding: 1rem 0;
+  font-family: "SanReg";
+  font-size: 4rem;
+  font-weight: 700;
+}
+.stat-text-pink {
+  font-family: "SanReg";
+  font-size: 2.125rem;
+  color: $pink;
 }
