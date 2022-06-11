@@ -8,7 +8,9 @@ const Header = () => {
           Chcesz podróżować <br />
           każdego dnia? <br />Z nami to możliwe!{" "}
         </h1>
-        <button className="header__button">Aplikuj teraz</button>
+        <a href="#jobs">
+          <button className="header__button">Aplikuj teraz</button>
+        </a>
       </div>
     </header>
   );

@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import Benefits from "./sections/Benefits";
 import Csr from "./sections/Csr";
+import Footer from "./sections/Footer";
 import Header from "./sections/Header";
 import Intro from "./sections/Intro";
 import Jobs from "./sections/Jobs";
@@ -21,6 +22,7 @@ function App() {
       <People />
       <Csr />
       <Jobs />
+      <Footer />
     </div>
   );
 }

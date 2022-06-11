@@ -44,7 +44,7 @@ const Navbar = () => {
               //   isOpen={isOpen}
               //   setIsOpen={setIsOpen}
             >
-              <a className="navbar__link" href="#contakt">
+              <a className="navbar__link" href="#contact">
                 Kontakt
               </a>
             </li>

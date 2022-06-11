@@ -27,9 +27,11 @@ const About = () => {
               od 20 lat. Działamy w czterech oddziałach zlokalizowanych w
               Warszawie, Krakowie i Katowicach.
             </p>
-            <button className="about__content-button button">
-              Dołącz do nas już dziś!
-            </button>
+            <a href="#jobs">
+              <button className="about__content-button button">
+                Dołącz do nas już dziś!
+              </button>
+            </a>
           </div>
           <div className="about__content-stats">
             <div className="about__content-stats--stat about__content-stats--stat-one">
