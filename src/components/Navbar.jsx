@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../assets/images/Logo.png";
 
 const Navbar = () => {
+  const [fixed, setFixed] = useState(false);
+
+  const isFixed = () => {
+    if (window.scrollY > 800) {
+      setFixed(true);
+    } else {
+      setFixed(false);
+    }
+  };
+  window.addEventListener("scroll", isFixed);
   return (
-    <nav className="navbar">
+    <nav className={fixed ? "navbar-fixed" : "navbar"}>
       <div className="maincontainer navbar__content">
         <div className="navbar__logo">
           <a href="#home">
