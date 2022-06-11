@@ -13,17 +13,17 @@ const Navbar = () => {
         <div className="navbar__menu">
           <ul className="navbar__list">
             <li className="navbar__item">
-              <a className="navbar__link" href="#o_nas">
+              <a className="navbar__link" href="#about">
                 O nas
               </a>
             </li>
             <li className="navbar__item">
-              <a className="navbar__link" href="#benefity">
+              <a className="navbar__link" href="#benefits">
                 Benefity
               </a>
             </li>
             <li className="navbar__item">
-              <a className="navbar__link" href="#wartości">
+              <a className="navbar__link" href="#values">
                 Nasze wartości
               </a>
             </li>

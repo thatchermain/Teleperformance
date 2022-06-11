@@ -25,15 +25,15 @@ const Values = () => {
             </p>
           </div>
         </div>
-        <div className="values__banner">
-          <span className="banner__h1">
-            Bądź częścią czegoś więcej niż tylko praca
-          </span>
-        </div>
-        <button className="values__content-button button">
-          Dołącz do nas już dziś!
-        </button>
       </div>
+      <div className="values__banner maincontainer">
+        <span className="banner__h1">
+          Bądź częścią czegoś więcej niż tylko praca
+        </span>
+      </div>
+      <button className="values__content-button button">
+        Dołącz do nas już dziś!
+      </button>
     </section>
   );
 };
