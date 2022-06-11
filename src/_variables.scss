@@ -75,3 +75,26 @@ $gradientDark: #780096;
     transform: scale(1.05);
   }
 }
+
+.section-title {
+  font-family: "SanSoft";
+  font-weight: 400;
+  color: $blue;
+  font-size: 3rem;
+}
+.section-description {
+  font-family: "NotoReg";
+  font-weight: 400;
+  color: $black;
+  font-size: 1.125rem;
+  line-height: 27px;
+}
+.banner__h1 {
+  font-size: 4rem;
+  line-height: 72px;
+  font-family: "SanBold";
+
+  background: -webkit-linear-gradient(45deg, $gradientLight, $gradientDark);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
