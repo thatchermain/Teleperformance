@@ -1,7 +1,7 @@
 import React from "react";
-import People1 from "../assets/images/people1.jfif";
-import People2 from "../assets/images/people2.jfif";
-import People3 from "../assets/images/people3.jfif";
+import People1 from "../assets/images/people1.webp";
+import People2 from "../assets/images/people2.webp";
+import People3 from "../assets/images/people3.webp";
 
 const People = ({ english }) => {
   return (

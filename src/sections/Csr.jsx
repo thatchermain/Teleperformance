@@ -1,6 +1,6 @@
 import React from "react";
 import CsrSlider from "../components/CsrSlider";
-import CsrImg from "../assets/images/csr.jfif";
+import CsrImg from "../assets/images/csr.webp";
 import CertImg from "../assets/images/cert.png";
 
 const Csr = ({ english, setEnglish }) => {

@@ -1,5 +1,5 @@
 import React from "react";
-import IntroImg from "../assets/images/intro.png";
+import IntroImg from "../assets/images/intro.jpg";
 
 const Intro = ({ english }) => {
   return (

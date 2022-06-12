@@ -1,5 +1,5 @@
 import React from "react";
-import ValuesImg from "../assets/images/values.jfif";
+import ValuesImg from "../assets/images/values.webp";
 
 const Values = ({ english }) => {
   return (

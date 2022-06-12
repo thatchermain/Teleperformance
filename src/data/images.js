@@ -1,14 +1,14 @@
-import image1 from "../assets/images/slider/1.jfif";
-import image2 from "../assets/images/slider/2.jfif";
-import image3 from "../assets/images/slider/3.jfif";
-import image4 from "../assets/images/slider/4.jfif";
-import image5 from "../assets/images/slider/5.jfif";
-import image6 from "../assets/images/slider/6.jfif";
-import image7 from "../assets/images/slider/7.jfif";
-import image8 from "../assets/images/slider/8.jfif";
-import image9 from "../assets/images/slider/9.jfif";
-import image10 from "../assets/images/slider/10.jfif";
-import image11 from "../assets/images/slider/11.jfif";
+import image1 from "../assets/images/slider/1.jpg";
+import image2 from "../assets/images/slider/2.jpg";
+import image3 from "../assets/images/slider/3.jpg";
+import image4 from "../assets/images/slider/4.jpg";
+import image5 from "../assets/images/slider/5.jpg";
+import image6 from "../assets/images/slider/6.jpg";
+import image7 from "../assets/images/slider/7.jpg";
+import image8 from "../assets/images/slider/8.jpg";
+import image9 from "../assets/images/slider/9.jpg";
+import image10 from "../assets/images/slider/10.jpg";
+import image11 from "../assets/images/slider/11.jpg";
 
 const images = [
   // { src: require("../assets/images/slider/1.jfif").default, text: "text" },
