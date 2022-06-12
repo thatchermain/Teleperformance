@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../assets/images/Logo.png";
 
-const Navbar = () => {
+const Navbar = ({ english, setEnglish }) => {
   const [fixed, setFixed] = useState(false);
 
   const isFixed = () => {
@@ -24,41 +24,40 @@ const Navbar = () => {
           <ul className="navbar__list">
             <li className="navbar__item">
               <a className="navbar__link" href="#about">
-                O nas
+                {!english ? "O nas" : "About us"}
               </a>
             </li>
             <li className="navbar__item">
               <a className="navbar__link" href="#benefits">
-                Benefity
+                {!english ? "Benefity" : "Benefits"}
               </a>
             </li>
             <li className="navbar__item">
               <a className="navbar__link" href="#values">
-                Nasze wartości
+                {!english ? "Nasze wartości" : "Our values"}
               </a>
             </li>
             <li className="navbar__item">
               <a className="navbar__link" href="#csr">
-                CSR
+                {!english ? "CSR" : "CSR"}
               </a>
             </li>
             <li className="navbar__item">
               <a className="navbar__link" href="#jobs">
-                Oferty pracy
+                {!english ? " Oferty pracy" : "Job offers"}
               </a>
             </li>
-            <li
-              className="navbar__item"
-              //   onClick={toggle}
-              //   toggle={toggle}
-              //   isOpen={isOpen}
-              //   setIsOpen={setIsOpen}
-            >
+            <li className="navbar__item">
               <a className="navbar__link" href="#contact">
-                Kontakt
+                {!english ? "Kontakt" : "Contact"}
               </a>
             </li>
-            <button>EN - PL</button>
+            <button
+              className="navbar__button"
+              onClick={() => setEnglish(!english)}
+            >
+              {!english ? "EN" : "PL"}
+            </button>
           </ul>
         </div>
       </div>

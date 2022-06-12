@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import images from "../data/images";
 
-const ImageSlider = () => {
+const ImageSlider = ({ english, setEnglish }) => {
   const [width, setWidth] = useState(0);
   const slider = useRef();
   useEffect(() => {
@@ -15,12 +15,14 @@ const ImageSlider = () => {
         dragConstraints={{ right: 0, left: -width }}
         className="slider__inner"
       >
-        {images.map((image) => {
+        {images.map((image, index) => {
           return (
-            <motion.div className="slider__items" key={image}>
+            <motion.div className="slider__items" key={index}>
               <div className="slider__item">
                 <img src={image.src} alt="" />
-                <p className="slider__text">{image.text}</p>
+                <p className="slider__text">
+                  {!english ? image.textPl : image.textEn}
+                </p>
               </div>
             </motion.div>
           );

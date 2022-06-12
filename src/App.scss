@@ -11,6 +11,12 @@ html {
 }
 body {
   overflow-x: hidden;
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.25) {
+    zoom: 0.8;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+    zoom: 0.65;
+  }
 }
 
 ///////////////////////////////////////////
@@ -82,6 +88,14 @@ body {
     }
   }
 }
+.navbar__button {
+  color: $white;
+  background: transparent;
+  border: 1px solid $white;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
 .navbar-fixed {
   position: fixed;
   z-index: 100;
@@ -91,6 +105,9 @@ body {
   // background: linear-gradient(to right, $gradientLight, $gradientDark);
   background-color: $fixedNav;
   padding: 1rem 0;
+  @media screen and (max-width: 990px) {
+    display: none;
+  }
 }
 ///////////////////////////////////////////
 //HEADER
@@ -98,6 +115,7 @@ body {
 .header {
   position: relative;
   // min-width: 100vw;
+  min-height: 100vh;
   top: -70px;
 
   background: url("./assets/images/Hero.png");
@@ -359,9 +377,39 @@ body {
     height: 15%;
     background-image: linear-gradient(to right, $gradientLight, $gradientDark);
   }
+  &--english {
+    position: relative;
+    width: 100%;
+    gap: 1rem;
+    font-family: "NotoReg";
+    font-size: 1.25rem;
+    &:before {
+      position: absolute;
+      top: 90%;
+      left: -20%;
+      content: "We believe in the power of people";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: $white;
+      width: 49%;
+      height: 15%;
+      background-image: linear-gradient(
+        to right,
+        $gradientLight,
+        $gradientDark
+      );
+    }
+  }
 }
 .images__left img {
   // position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.images__left--english img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -414,6 +462,58 @@ body {
   }
 }
 .images__right img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.images__right--english {
+  position: relative;
+  width: 100%;
+  font-family: "NotoReg";
+  font-size: 1.25rem;
+  &--top {
+    padding-bottom: 1rem;
+    &:before {
+      position: absolute;
+      top: -7%;
+      right: 10%;
+      text-align: center;
+      content: "We welcome and accept";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      width: 49%;
+      height: 15%;
+      background-image: linear-gradient(
+        to right,
+        $gradientLight,
+        $gradientDark
+      );
+    }
+  }
+  &--bottom {
+    &:before {
+      position: absolute;
+      top: 55%;
+      right: -45%;
+      content: "We inspire and motivate";
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      width: 49%;
+      height: 15%;
+      background-image: linear-gradient(
+        to right,
+        $gradientLight,
+        $gradientDark
+      );
+    }
+  }
+}
+.images__right--english img {
   width: 100%;
   max-height: 100%;
   object-fit: cover;

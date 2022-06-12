@@ -3,7 +3,7 @@ import FooterLogo from "../assets/images/logo-footer.png";
 import Facebook from "../assets/images/facebook.png";
 import Instagram from "../assets/images/instagram.png";
 
-const Footer = () => {
+const Footer = ({ english }) => {
   return (
     <footer id="contact" className="footer">
       <div className="footer__content">
@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer__content--right">
-          <p>Nasze biura</p>
+          <p>{!english ? "Nasze biura" : "Our offices"}</p>
           <div className="location-top">
             <div className="location-top--left">
               <p className="city">WARSZAWA</p>
