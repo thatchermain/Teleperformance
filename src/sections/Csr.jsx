@@ -5,16 +5,16 @@ import CertImg from "../assets/images/cert.png";
 
 const Csr = ({ english, setEnglish }) => {
   return (
-    <section id="csr">
+    <section id="csr" className="csr">
       <div className="maincontainer">
         <h2 className="section-name">csr</h2>
         <div>
-          <h2 className="csr-info--title section-title">
+          <h2 className="csr__content-info--title section-title">
             {!english
               ? "Tworząc lepszy i sprawiedliwszy świat"
               : "Creating a better and fairer world"}
           </h2>
-          <p className="csr-info--description">
+          <p className="csr__content-info--description">
             {!english
               ? "Zobowiązujemy się dbać o równość płci, walczyć ze zmianami klimatycznymi i wyróżniać się jako innowacyjny pracodawca przyszłości."
               : "We are committed to gender equality, fighting climate change, and being a top employer."}

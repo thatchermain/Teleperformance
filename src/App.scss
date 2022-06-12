@@ -201,7 +201,7 @@ body {
   }
 }
 .intro__banner {
-  padding: 10rem 0;
+  padding: 10rem 0 0;
   margin: 0 auto;
   text-align: center;
 }
@@ -209,6 +209,9 @@ body {
 ///////////////////////////////////////////
 //ABOUT
 /////////////////////////////////////////
+.about {
+  padding-top: 70px;
+}
 .about__content {
   display: flex;
   justify-content: center;
@@ -272,8 +275,11 @@ body {
 ///////////////////////////////////////////
 //BENEFITS
 /////////////////////////////////////////
+.benefits {
+  padding-top: 70px;
+}
 .benefits__slider {
-  padding: 5rem 0;
+  padding: 5rem 0 0;
 }
 .slider__text {
   font-family: "SanSoft";
@@ -528,6 +534,9 @@ body {
 //CSR
 /////////////////////////////////////////
 
+.csr {
+  padding-top: 70px;
+}
 .csr__content-info--description {
   font-family: "NotoReg";
   font-size: 1.125rem;
@@ -590,6 +599,9 @@ body {
 //////////////////////////////////
 //JOBS
 //////////////////////////////////
+.jobs {
+  padding-top: 70px;
+}
 .jobs__buttons {
   padding: 5rem 0 10rem;
   display: flex;

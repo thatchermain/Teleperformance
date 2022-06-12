@@ -2,7 +2,7 @@ import React from "react";
 
 const About = ({ english, setEnglish }) => {
   return (
-    <section id="about">
+    <section id="about" className="about">
       <div className="maincontainer">
         <h2 className="section-name">{!english ? "o nas" : "about us"}</h2>
         <div className="about__content">

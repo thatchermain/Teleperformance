@@ -2,7 +2,7 @@ import React from "react";
 
 const Jobs = ({ english }) => {
   return (
-    <section id="jobs">
+    <section id="jobs" className="jobs">
       <div className="maincontainer">
         <h2 className="section-name">
           {!english ? "oferty pracy" : "job offers"}

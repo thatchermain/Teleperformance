@@ -3,7 +3,7 @@ import ImageSlider from "../components/ImageSlider";
 
 const Benefits = ({ english, setEnglish }) => {
   return (
-    <section id="benefits">
+    <section id="benefits" className="benefits">
       <div className="maincontainer">
         <h2 className="section-name">
           {!english ? "nasze benefity" : "benefits"}
