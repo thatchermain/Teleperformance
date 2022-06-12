@@ -15,9 +15,8 @@ const Intro = ({ english }) => {
             </h2>
             <p className="intro__content-info--description section-description">
               {!english
-                ? "ano sączysz kawę ze znajomymi z Włoch, lunch zjadasz w towarzystwie przyjaciół z Hiszpanii lub Kolumbii, a po pracy integrujesz się ze swoimi portugalskimi i brazylijskimi rówieśnikami. Uczysz się i poznajesz inne kultury. A to wszystko w jednym miejscu - w naszym biurze Teleperformance."
+                ? "Rano sączysz kawę ze znajomymi z Włoch, lunch zjadasz w towarzystwie przyjaciół z Hiszpanii lub Kolumbii, a po pracy integrujesz się ze swoimi portugalskimi i brazylijskimi rówieśnikami. Uczysz się i poznajesz inne kultury. A to wszystko w jednym miejscu - w naszym biurze Teleperformance."
                 : "In the morning you drink coffee with your friends from Italy then you have lunch with your buddies from Spain or Colombia and after work you can integrate chatting with peers from Portugal or Brazil. You can learn and explore other cultures as much as you want. You can do that by staying in just one place - our offices in Kraków, Katowice and Warszawa!"}
-              R
             </p>
           </div>
         </div>
