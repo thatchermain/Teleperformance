@@ -27,11 +27,16 @@ const Values = ({ english }) => {
         </div>
       </div>
       <div className="values__banner maincontainer">
-        <span className="banner__h1">
+        <p
+          className="banner__h1"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="100"
+        >
           {!english
             ? "Bądź częścią czegoś więcej niż tylko praca"
             : "Be part of something bigger than just a job"}
-        </span>
+        </p>
       </div>
       <button className="values__content-button button">
         {!english ? "Dołącz do nas już dziś!" : "Apply now"}

@@ -61,11 +61,17 @@ const People = ({ english }) => {
           </div>
         </div>
         <div className="people__banner banner">
-          <span className="banner__h1">
+          <p
+            className="banner__h1"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="400"
+            data-aos-delay="400"
+          >
             {!english
               ? "Jesteś ambitny? My również"
               : "Are you ambitious? So are we"}
-          </span>
+          </p>
         </div>
       </div>
     </section>

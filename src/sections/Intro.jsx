@@ -21,11 +21,24 @@ const Intro = ({ english }) => {
           </div>
         </div>
         <div className="intro__banner">
-          <span className="banner__h1">Teleperformance.</span>
+          <p
+            className="banner__h1"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="100"
+          >
+            Teleperformance.
+          </p>
           <br />
-          <span className="banner__h1">
+          <p
+            className="banner__h1"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos-offset="100"
+          >
             {!english ? "Tak duży jak Twoje marzenia" : "As big as your dreams"}
-          </span>
+          </p>
         </div>
       </div>
     </section>

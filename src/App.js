@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./App.scss";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
@@ -12,6 +14,10 @@ import People from "./sections/People";
 import Values from "./sections/Values";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   const [english, setEnglish] = useState(false);
   return (
     <div className="App">
