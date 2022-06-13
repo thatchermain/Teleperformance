@@ -13,6 +13,7 @@ import Jobs from "./sections/Jobs";
 import People from "./sections/People";
 import Values from "./sections/Values";
 import NavbarMobile from "./components/NavbarMobile";
+import FooterMobile from "./sections/FooterMobile";
 
 function App() {
   useEffect(() => {
@@ -33,6 +34,7 @@ function App() {
       <Csr setEnglish={setEnglish} english={english} />
       <Jobs setEnglish={setEnglish} english={english} />
       <Footer setEnglish={setEnglish} english={english} />
+      <FooterMobile setEnglish={setEnglish} english={english} />
     </div>
   );
 }

@@ -22,9 +22,13 @@ const NavbarMobile = ({ toggle, isOpen, setIsOpen, english, setEnglish }) => {
 
   return (
     <nav
-      className={`${fixed ? "mobilenav-fixed" : "mobilenav"} ${
-        showMobile ? `navActive` : `mobilenav`
-      }`}
+      className={
+        showMobile && fixed
+          ? "activeFixed mobilenav navActive"
+          : `${fixed ? "mobilenav-fixed" : "mobilenav"} ${
+              showMobile ? `navActive` : `mobilenav`
+            }`
+      }
     >
       {/* <nav className={showMobile ? `navActive` : `mobilenav`}> */}
       <div className="mobilenav__wrapper">
@@ -105,81 +109,6 @@ const NavbarMobile = ({ toggle, isOpen, setIsOpen, english, setEnglish }) => {
           >
             {!english ? "EN" : "PL"}
           </button>
-          {/* <li
-              className="mobilenav__list-item"
-              onClick={() => setShowMobile(false)}
-            >
-              <a className="linkMobile" href="#o_nas">
-                O nas
-              </a>
-            </li>
-            <li
-              className="mobilenav__list-item"
-              onClick={() => setShowMobile(false)}
-            >
-              <a className="linkMobile" href="#staze">
-                Staże
-              </a>
-            </li>
-            <li
-              className="mobilenav__list-item"
-              onClick={() => setShowMobile(false)}
-            >
-              <a className="linkMobile" href="#praktyki">
-                Praktyki
-              </a>
-            </li>
-            <li
-              className="mobilenav__list-item"
-              onClick={() => setShowMobile(false)}
-            >
-              <a className="linkMobile" href="#praca">
-                Praca
-              </a>
-            </li>
-            <li
-              className="mobilenav__list-item"
-              onClick={() => setShowMobile(false)}
-            >
-              <a className="linkMobile" href="#rekrutacja">
-                Rekrutacja
-              </a>
-            </li>
-            <li
-              className="mobilenav__list-item"
-              onClick={() => setShowMobile(false)}
-              toggle={toggle}
-              isOpen={isOpen}
-              setIsOpen={setIsOpen}
-            >
-              <a className="linkMobile" href="#staze">
-                Benefity
-              </a>
-            </li>
-            <li
-              className="mobilenav__list-item"
-              onClick={() => setShowMobile(false)}
-            >
-              <a className="linkMobile" href="#wartosci">
-                Wartości
-              </a>
-            </li>
-            <li
-              className="mobilenav__list-item"
-              onClick={() => setShowMobile(false)}
-            >
-              <a className="linkMobile" href="#wspolpraca">
-                Nasze współprace
-              </a>
-            </li>
-            <li
-              className="mobilenav__list-item"
-              onClick={() => setShowMobile(false)}
-            >
-              <a className="linkMobile" href="#kontakt">
-                Kontakt
-              </a>
-            </li> */}
         </ul>
       </div>
       {/* </nav> */}

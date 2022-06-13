@@ -6,17 +6,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
-}
+html,
 body {
+  scroll-behavior: smooth;
+  width: 100vw;
   overflow-x: hidden;
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.25) {
-    zoom: 0.8;
-  }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
-    zoom: 0.65;
-  }
+  // @media only screen and (max-width: 1440px) and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.25) {
+  //   zoom: 0.8;
+  // }
+  // @media only screen and (max-width: 1440px) and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  //   zoom: 0.65;
+  // }
 }
 
 ///////////////////////////////////////////
@@ -121,6 +121,7 @@ body {
   height: 70px;
   margin: 0 auto;
   background-color: $fixedMobileNav;
+  background-color: transparent;
   z-index: 10;
   @media screen and (min-width: 990px) {
     display: none;
@@ -246,18 +247,21 @@ body {
   height: 55px;
   cursor: pointer;
 }
-// .mobilenav-fixed {
-//   position: fixed;
-//   z-index: 100;
-//   top: 0;
-//   width: 100%;
-//   height: 70px;
-//   // background: linear-gradient(to right, $gradientLight, $gradientDark);
-//   background-color: $fixedNav;
-//   background-color: $white;
-//   color: $black;
-//   padding: 1rem 0;
-// }
+.mobilenav-fixed {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  // background: linear-gradient(to right, $gradientLight, $gradientDark);
+  background-color: $fixedNav;
+  // background-color: $white;
+  color: $black;
+  padding: 1rem 0;
+}
+.activeFixed {
+  background-color: $white;
+}
 ///////////////////////////////////////////
 //HEADER
 /////////////////////////////////////////
@@ -272,23 +276,34 @@ body {
   background-size: cover;
   background-position: 30% 100%;
 
-  @media screen and (max-width: 990px) {
+  @media screen and (max-width: 756px) {
     background: url("./assets/images/HeroMobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 30% 100%;
+    background-position: 0% 50%;
+  }
+  @media screen and (max-width: 756px) {
+    display: flex;
+    justify-content: center;
   }
 }
 .title-container {
   position: absolute;
   bottom: 0;
+  @media screen and (max-width: 756px) {
+    position: relative;
+    top: 20%;
+  }
   &__title {
     font-family: "SanReg";
     font-weight: 400;
     color: $white;
-    font-size: clamp(4.25rem, 4.5vw, 6rem);
+    font-size: clamp(3.25rem, 4.5vw, 6rem);
     line-height: 1.1;
     padding-top: 25%;
+    @media screen and (max-width: 756px) {
+      font-size: clamp(2rem, 4.5vw, 6rem);
+    }
   }
   &__button {
     cursor: pointer;
@@ -318,6 +333,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  @media screen and (max-width: 756px) {
+    flex-direction: column;
+  }
 }
 .intro__content-image {
   // background-color: green;
@@ -327,6 +345,9 @@ body {
   // left: 0;
   // background-color: $blue;
   padding: 8rem 0 6rem 2rem;
+  @media screen and (max-width: 756px) {
+    padding: 6rem 0 2rem 2rem;
+  }
   &:before {
     position: absolute;
     top: 0;
@@ -336,6 +357,10 @@ body {
     height: 100%;
     background-color: $blue;
     z-index: -2;
+
+    @media screen and (max-width: 756px) {
+      top: 10%;
+    }
   }
 }
 .intro__content-image img {
@@ -359,6 +384,9 @@ body {
   padding: 10rem 0 0;
   margin: 0 auto;
   text-align: center;
+  @media screen and (max-width: 756px) {
+    padding: 4rem 0 0;
+  }
 }
 
 ///////////////////////////////////////////
@@ -373,6 +401,9 @@ body {
   align-items: baseline;
   gap: 2rem;
   padding: 0 0 5rem;
+  @media screen and (max-width: 756px) {
+    flex-direction: column;
+  }
 }
 .about__content-info {
   width: 100%;
@@ -392,16 +423,27 @@ body {
   @media screen and (max-width: 1440px) {
     top: 5rem;
   }
+  @media screen and (max-width: 756px) {
+    padding-left: 1rem;
+  }
 }
 .about__content-stats--stat {
+  position: relative;
   width: 200px;
   height: 200px;
   // border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media screen and (max-width: 756px) {
+    width: 140px;
+    height: 150px;
+  }
   &-one {
-    // position: absolute;
+    @media screen and (max-width: 756px) {
+      position: relative;
+      top: -100px;
+    }
   }
   &-two {
     position: absolute;
@@ -411,12 +453,22 @@ body {
       left: 300px;
       top: 100px;
     }
+    @media screen and (max-width: 756px) {
+      position: relative;
+      left: 170px;
+      top: -130px;
+    }
   }
   &-three {
     position: absolute;
     top: 300px;
     @media screen and (max-width: 1440px) {
       top: 200px;
+    }
+    @media screen and (max-width: 756px) {
+      position: relative;
+      left: 70px;
+      top: -100px;
     }
   }
 }
@@ -454,6 +506,9 @@ body {
 }
 .benefits__slider {
   padding: 5rem 0 0;
+  @media screen and (max-width: 756px) {
+    padding: 0;
+  }
 }
 .slider__text {
   font-family: "SanSoft";
@@ -476,11 +531,20 @@ body {
   // align-items: center;
   gap: 3rem;
   padding: 10rem 0 0;
+  @media screen and (max-width: 756px) {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+  }
 }
 .values__content-image {
   padding-top: 10rem;
   width: 100%;
   // position: absolute;
+  @media screen and (max-width: 756px) {
+    padding: 1rem;
+    // width: 80%;
+  }
 }
 .values__content-image img {
   width: 100%;
@@ -491,6 +555,9 @@ body {
   height: 100%;
   background-color: $blue;
   padding: 4rem 4rem 4rem 4rem;
+  @media screen and (max-width: 756px) {
+    padding: 1rem;
+  }
   &:before {
     position: absolute;
     content: "";
@@ -500,6 +567,12 @@ body {
     z-index: -2;
     top: 0;
     left: -20%;
+    @media screen and (max-width: 756px) {
+      top: -10%;
+      left: 0;
+      width: 100vw;
+      height: 110%;
+    }
   }
   &--title {
     color: $white;
@@ -510,6 +583,9 @@ body {
     font-size: 1.125rem;
     line-height: 27px;
     font-family: "NotoReg";
+    @media screen and (max-width: 756px) {
+      font-size: 0.8rem;
+    }
   }
 }
 .values__content-button {
@@ -538,12 +614,19 @@ body {
     display: flex;
     gap: 1rem;
     margin: 4rem;
+    @media screen and (max-width: 756px) {
+      flex-direction: column;
+    }
   }
   @media screen and (max-width: 1440px) {
     width: 60%;
   }
   @media screen and (max-width: 1200px) {
     width: 70%;
+  }
+  @media screen and (max-width: 756px) {
+    padding: 0;
+    width: 50%;
   }
 }
 .images__left {
@@ -552,6 +635,12 @@ body {
   gap: 1rem;
   font-family: "NotoReg";
   font-size: 1.25rem;
+  @media screen and (max-width: 756px) {
+    margin: 0;
+    width: 240px;
+    height: 430px;
+    text-align: center;
+  }
   &:before {
     position: absolute;
     top: 90%;
@@ -565,6 +654,11 @@ body {
     width: 49%;
     height: 15%;
     background-image: linear-gradient(to right, $gradientLight, $gradientDark);
+    @media screen and (max-width: 756px) {
+      top: 5%;
+      left: -30%;
+      width: 70%;
+    }
   }
   &--english {
     position: relative;
@@ -608,6 +702,13 @@ body {
   width: 100%;
   font-family: "NotoReg";
   font-size: 1.25rem;
+  @media screen and (max-width: 756px) {
+    margin-top: 1rem;
+    width: 260px;
+    height: 210px;
+    left: -40%;
+    top: 2rem;
+  }
   &--top {
     padding-bottom: 1rem;
     &:before {
@@ -627,9 +728,21 @@ body {
         $gradientLight,
         $gradientDark
       );
+      @media screen and (max-width: 756px) {
+        top: -15%;
+        left: 50%;
+        width: 170px;
+        height: 70px;
+      }
     }
   }
   &--bottom {
+    @media screen and (max-width: 756px) {
+      top: -15%;
+      left: 50%;
+      width: 310px;
+      height: 270px;
+    }
     &:before {
       position: absolute;
       top: 55%;
@@ -647,6 +760,12 @@ body {
         $gradientLight,
         $gradientDark
       );
+      @media screen and (max-width: 756px) {
+        top: 180%;
+        left: 40%;
+        width: 170px;
+        height: 70px;
+      }
     }
   }
 }
@@ -711,6 +830,10 @@ body {
   font-family: "NotoReg";
   font-size: 1.125rem;
   padding: 2rem;
+  @media screen and (max-width: 756px) {
+    width: 100vw;
+    margin-top: 15rem;
+  }
 }
 
 ///////////////////////////////////////////
@@ -730,6 +853,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 756px) {
+    flex-direction: column-reverse;
+    padding: 5rem 0 2rem;
+  }
 }
 .csr__content-stats {
   width: 100%;
@@ -737,9 +864,14 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5rem;
-
+  @media screen and (max-width: 756px) {
+    flex-direction: column;
+  }
   &--cert {
     max-width: 150px;
+    @media screen and (max-width: 756px) {
+      padding-top: 2rem;
+    }
   }
   &--cert img {
     width: 100%;
@@ -751,6 +883,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media screen and (max-width: 756px) {
+      gap: 2rem;
+    }
   }
 }
 .procentage-number {
@@ -765,6 +900,9 @@ body {
 .csr__content-image {
   width: 100%;
   position: relative;
+  @media screen and (max-width: 756px) {
+    margin-bottom: 4rem;
+  }
   &:before {
     position: absolute;
     right: 0;
@@ -798,8 +936,12 @@ body {
 //////////////////////////////////
 .footer {
   background-color: $violet;
+  @media screen and(max-width:576px) {
+    display: none;
+  }
 }
 .footer__content {
+  position: relative;
   width: 50%;
   margin: 0 auto;
   padding: 2rem;
@@ -809,6 +951,11 @@ body {
   gap: 15rem;
   font-family: "NotoReg";
   line-height: 25px;
+  @media screen and (max-width: 756px) {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
   &--left {
     display: flex;
     flex-direction: column;
@@ -839,4 +986,11 @@ body {
 }
 .footer-copyright-text {
   text-align: center;
+}
+
+.footerMobile {
+  background-color: $violet;
+  @media screen and(min-width:576px) {
+    display: none;
+  }
 }

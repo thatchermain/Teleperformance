@@ -51,6 +51,9 @@ $gradientDark: #780096;
   margin: 0 6vw;
   //   border: 2px solid yellow;
   //   height: 100%;
+  @media screen and (max-width: 756px) {
+    margin: 0 3vw;
+  }
 }
 .maincontainer-margin-right {
   width: auto;
@@ -91,6 +94,9 @@ $gradientDark: #780096;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 2rem 0;
+  @media screen and (max-width: 756px) {
+    // padding: 0;
+  }
 }
 .section-name--white {
   color: $white;
@@ -107,6 +113,9 @@ $gradientDark: #780096;
   @media screen and (max-width: 1024px) {
     font-size: clamp(1rem, 2.5vw, 3rem);
   }
+  @media screen and (max-width: 756px) {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
 }
 .section-description {
   font-family: "NotoReg";
@@ -116,6 +125,10 @@ $gradientDark: #780096;
   line-height: 27px;
   @media screen and (max-width: 1440px) {
     font-size: 0.9rem;
+  }
+  @media screen and (max-width: 756px) {
+    font-size: 0.8rem;
+    line-height: 20px;
   }
 }
 .banner {
@@ -128,6 +141,10 @@ $gradientDark: #780096;
   font-family: "SanBold";
   font-size: clamp(3rem, 3vw, 4rem);
   @media screen and (max-width: 1440px) {
+  }
+  @media screen and (max-width: 756px) {
+    font-size: clamp(2rem, 3vw, 4rem);
+    line-height: 30px;
   }
 
   background: -webkit-linear-gradient(45deg, $gradientLight, $gradientDark);
@@ -154,6 +171,10 @@ $gradientDark: #780096;
   padding: 2rem;
   @media screen and (max-width: 1440px) {
     height: 26rem;
+  }
+  @media screen and (max-width: 756px) {
+    margin: 0;
+    width: 100%;
   }
 }
 .slider__inner {
@@ -199,7 +220,10 @@ $gradientDark: #780096;
 .slider__info {
   font-family: "NotoReg";
   font-size: 1rem;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
+  @media screen and (max-width: 756px) {
+    padding: 1rem 0;
+  }
 }
 .slider__hashtag {
   font-family: "Sansoft";
