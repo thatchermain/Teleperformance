@@ -97,9 +97,9 @@ $gradientDark: #780096;
 }
 .section-title {
   font-family: "SanSoft";
-  font-weight: 400;
+  font-weight: 700;
   color: $blue;
-  font-size: 3rem;
+  font-size: clamp(2rem, 4vw, 3rem);
 }
 .section-description {
   font-family: "NotoReg";

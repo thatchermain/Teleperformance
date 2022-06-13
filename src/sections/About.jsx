@@ -14,7 +14,7 @@ const About = ({ english, setEnglish }) => {
             </h2>
             <p className="about__content-info--description section-description">
               {!english
-                ? "Koncentrując się na dostarczaniu wyjątkowych usług biznesowych, firma zapewnia zintegrowane podejście OneOffice, obejmujące zarządzanie doświadczeniami klientów, usługi back-office i optymalizację procesów biznesowych. Kompleksowe portfolio rozwiązań pomaga organizacjom zwiększyć wydajność biznesową a także poprawić lojalność klientów. Wszystko to poprzez zrównoważenie zaawansowanych technologicznie rozwiązań z podejściem skoncentrowanym na potrzebach odbiorców praktyk biznesowych."
+                ? "Koncentrując się na dostarczaniu wyjątkowych usług biznesowych, firma zapewnia zintegrowane podejście OneOffice, obejmujące zarządzanie doświadczeniami klientów, usługi back-office i optymalizację procesów biznesowych. Kompleksowe portfolio rozwiązań pomaga organizacjom zwiększyć wydajność biznesową, a także poprawić lojalność klientów. Wszystko to poprzez zrównoważenie zaawansowanych technologicznie rozwiązań z podejściem skoncentrowanym na potrzebach odbiorców praktyk biznesowych."
                 : "Focused on delivering exceptional business services, we provide an integrated, OneOffice approach through: customer experience management, back-office services, and business process optimization. This end-to-end solution portfolio helps companies achieve business efficiencies and improve customer loyalty by balancing high-tech solutions with a high-touch, human-centric approach. "}
               <br />
               <br />
@@ -44,7 +44,7 @@ const About = ({ english, setEnglish }) => {
               </span>
               <span className="stat-number text-gradient">55</span>
               <span className="stat-text-pink">
-                {!english ? "}różnych krajów" : "different countries"}
+                {!english ? "różnych krajów" : "different countries"}
               </span>
             </div>
             <div className="about__content-stats--stat about__content-stats--stat-three">

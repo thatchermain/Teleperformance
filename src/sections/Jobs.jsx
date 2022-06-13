@@ -13,40 +13,10 @@ const Jobs = ({ english }) => {
             : "Are you looking for a career? We have many"}
         </h2>
         <div className="jobs__buttons">
-          <button
-            className="button"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-delay="300"
-            data-aos-offset="300"
-          >
-            Warszawa
-          </button>
-          <button
-            className="button"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-offset="300"
-            data-aos-delay="600"
-          >
-            Katowice
-          </button>
-          <button
-            className="button"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-offset="300"
-            data-aos-delay="900"
-          >
-            Kraków
-          </button>
-          <button
-            className="button"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-offset="300"
-            data-aos-delay="1200"
-          >
+          <button className="button">Warszawa</button>
+          <button className="button">Katowice</button>
+          <button className="button">Kraków</button>
+          <button className="button">
             {!english ? "Praca zdalna" : "Remote work"}
           </button>
         </div>

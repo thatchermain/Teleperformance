@@ -20,19 +20,14 @@ const Values = ({ english }) => {
             </h2>
             <p className="values__content-info--description section-description">
               {!english
-                ? "Wiemy, że za to pracownicy stanowią największy kapitał w naszej organizacji. Ludzi i pracę zespołową stawiamy zawsze na pierwszym miejscu. Inwestujemy w miejsca pracy, które inspirują naszych pracowników do uczenia siebie i innych, do rozwoju i realizacji celów. Motywujemy do działania, dokonujemy zmian, bo Twoje sprawy to nasze sprawy. Razem budujemy partnerskie relacje, które zdają egzamin."
+                ? "Wiemy, że za to pracownicy stanowią największy kapitał w naszej organizacji. Ludzi i pracę zespołową stawiamy zawsze na pierwszym miejscu. Inwestujemy w miejsca pracy, które inspirują do uczenia siebie i innych, do rozwoju i realizacji celów. Motywujemy do działania, dokonujemy zmian, bo Twoje sprawy to nasze sprawy. Razem budujemy partnerskie relacje, które zdają egzamin."
                 : "This is a place where we believe in the power of people. Where teamwork wins. That’s how we put commitment into practice. This is the company that inspires. To learn, to teach, to grow. To get things done. This is a company that motivates. We make a difference. Because your business is our business. Together, we build partnerships that perform."}
             </p>
           </div>
         </div>
       </div>
       <div className="values__banner maincontainer">
-        <p
-          className="banner__h1"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-offset="100"
-        >
+        <p className="banner__h1" data-aos="fade-up" data-aos-duration="1000">
           {!english
             ? "Bądź częścią czegoś więcej niż tylko praca"
             : "Be part of something bigger than just a job"}

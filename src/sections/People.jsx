@@ -50,7 +50,7 @@ const People = ({ english }) => {
           <div className="people__content--info">
             <p>
               {!english
-                ? "Korzystamy z odpowiedzialnych, i skutecznych metod rekrutacji, aby przyciągać najlepsze talenty. Inwestujemy w rozwój pracowników, wzmacniając ich poczucie własnej wartości i tym samym motywując do dalszego rozwoju."
+                ? "Korzystamy z odpowiedzialnych i skutecznych metod rekrutacji, aby przyciągać najlepsze talenty. Inwestujemy w rozwój pracowników, wzmacniając ich poczucie własnej wartości i tym samym motywując do dalszego rozwoju."
                 : "We use responsible, inclusive and efficient recruiting practices to attract the best talent, and then invest heavily in employee empowerment, growth, and development to maximize each employee’s potential."}
               <br />
               <br />

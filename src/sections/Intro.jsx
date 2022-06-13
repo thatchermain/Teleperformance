@@ -37,7 +37,7 @@ const Intro = ({ english }) => {
             data-aos-delay="300"
             data-aos-offset="100"
           >
-            {!english ? "Tak duży jak Twoje marzenia" : "As big as your dreams"}
+            {!english ? "As big as your dreams" : "As big as your dreams"}
           </p>
         </div>
       </div>
