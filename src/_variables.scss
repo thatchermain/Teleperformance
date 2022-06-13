@@ -40,6 +40,7 @@ $blue: #3047b0;
 $pink: #ff0082;
 $violet: #780096;
 $fixedNav: #e2548c;
+$fixedMobileNav: #b74076;
 //GRADIENT
 $gradientLight: #ff0082;
 $gradientDark: #780096;
@@ -100,6 +101,12 @@ $gradientDark: #780096;
   font-weight: 700;
   color: $blue;
   font-size: clamp(2rem, 4vw, 3rem);
+  @media screen and (max-width: 1440px) {
+    font-size: clamp(1rem, 3vw, 3rem);
+  }
+  @media screen and (max-width: 1024px) {
+    font-size: clamp(1rem, 2.5vw, 3rem);
+  }
 }
 .section-description {
   font-family: "NotoReg";
@@ -107,6 +114,9 @@ $gradientDark: #780096;
   color: $black;
   font-size: 1.125rem;
   line-height: 27px;
+  @media screen and (max-width: 1440px) {
+    font-size: 0.9rem;
+  }
 }
 .banner {
   text-align: center;
@@ -116,6 +126,9 @@ $gradientDark: #780096;
   font-size: 4rem;
   line-height: 72px;
   font-family: "SanBold";
+  font-size: clamp(3rem, 3vw, 4rem);
+  @media screen and (max-width: 1440px) {
+  }
 
   background: -webkit-linear-gradient(45deg, $gradientLight, $gradientDark);
   -webkit-background-clip: text;
@@ -139,6 +152,9 @@ $gradientDark: #780096;
   height: 30rem;
   margin: 5rem 0 5rem 10rem;
   padding: 2rem;
+  @media screen and (max-width: 1440px) {
+    height: 26rem;
+  }
 }
 .slider__inner {
   display: flex;
@@ -155,12 +171,17 @@ $gradientDark: #780096;
   min-width: 20rem;
   position: relative;
   padding: 1rem;
+  @media screen and (max-width: 1440px) {
+  }
 }
 .slider__item img {
   width: 100%;
   height: 100%;
   pointer-events: none;
   object-fit: cover;
+  @media screen and (max-width: 1440px) {
+    height: 90%;
+  }
 }
 
 .slider__item--csr {

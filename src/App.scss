@@ -109,6 +109,155 @@ body {
     display: none;
   }
 }
+
+///////////////////////////////////////////
+//NAVBAR MOBILE
+/////////////////////////////////////////
+.mobilenav {
+  position: sticky;
+  top: 0;
+  padding: 1rem 0;
+  width: 100vw;
+  height: 70px;
+  margin: 0 auto;
+  background-color: $fixedMobileNav;
+  z-index: 10;
+  @media screen and (min-width: 990px) {
+    display: none;
+  }
+}
+.navActive {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 70px;
+  margin: 0 auto;
+  background-color: $white;
+  z-index: 10;
+  // border-bottom: 2px solid $violet;
+}
+.mobilenav__wrapper {
+  padding: 0 2rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // background-color: green;
+}
+.mobilenav__hamburger {
+  padding: 1rem;
+  cursor: pointer;
+}
+.mobilenav__hidden {
+  position: absolute;
+  top: 60px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.4s;
+  transform: translateX(-100%);
+  width: 100%;
+  height: 100vh;
+  padding-top: 3rem;
+}
+.mobilenav__active {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  height: 100vh;
+  padding-top: 3rem;
+  transition: 0.4s;
+  background-color: rgb(255, 255, 255);
+}
+.mobilenav__list {
+  list-style: none;
+  padding: 2rem;
+}
+.mobilenav__list-item {
+  padding: 0.25rem 0;
+}
+
+.logomobile__active {
+  padding: 0.5rem 0.75rem;
+}
+.mobilenav__open {
+  width: 25px;
+  height: 2px;
+  top: -10px;
+  left: 5px;
+  background-color: $white;
+  position: relative;
+
+  transform-origin: 0 0;
+  transition: 0.4s;
+  &:after,
+  &:before {
+    position: absolute;
+    content: "";
+    background-color: $white;
+    width: 25px;
+    height: 2px;
+    transition: 0.4s;
+  }
+  &:after {
+    top: 16px;
+  }
+  &:before {
+    top: 8px;
+  }
+}
+.mobile__nav__close {
+  width: 25px;
+  height: 2px;
+  top: -2px;
+  left: 5px;
+  background-color: $black;
+  position: relative;
+
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+  transition: 0.4s;
+
+  &:after {
+    position: absolute;
+    content: "";
+    background-color: $black;
+    transform: rotate(-270deg);
+    width: 25px;
+    height: 2px;
+    transition: 0.4s;
+  }
+}
+.linkMobile {
+  text-decoration: none;
+  color: $black;
+  font-size: 2.5rem;
+  font-family: "SanSoft";
+  font-weight: bold;
+  line-height: 45px;
+}
+
+.mobilenav__button {
+  font-family: "Sansoft";
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: $black;
+  background: transparent;
+  border: 1px solid $black;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+}
+// .mobilenav-fixed {
+//   position: fixed;
+//   z-index: 100;
+//   top: 0;
+//   width: 100%;
+//   height: 70px;
+//   // background: linear-gradient(to right, $gradientLight, $gradientDark);
+//   background-color: $fixedNav;
+//   background-color: $white;
+//   color: $black;
+//   padding: 1rem 0;
+// }
 ///////////////////////////////////////////
 //HEADER
 /////////////////////////////////////////
@@ -122,6 +271,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 30% 100%;
+
+  @media screen and (max-width: 990px) {
+    background: url("./assets/images/HeroMobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% 100%;
+  }
 }
 .title-container {
   position: absolute;
@@ -233,6 +389,9 @@ body {
   position: relative;
   width: 100%;
   padding-left: 5rem;
+  @media screen and (max-width: 1440px) {
+    top: 5rem;
+  }
 }
 .about__content-stats--stat {
   width: 200px;
@@ -248,27 +407,43 @@ body {
     position: absolute;
     left: 350px;
     top: 160px;
+    @media screen and (max-width: 1440px) {
+      left: 300px;
+      top: 100px;
+    }
   }
   &-three {
     position: absolute;
     top: 300px;
+    @media screen and (max-width: 1440px) {
+      top: 200px;
+    }
   }
 }
 .stat-text-gray {
   font-family: "NotoReg";
   font-size: 1rem;
   color: $gray;
+  @media screen and (max-width: 1440px) {
+    font-size: 0.9rem;
+  }
 }
 .stat-number {
   padding: 1rem 0;
   font-family: "SanReg";
   font-size: 4rem;
   font-weight: 700;
+  @media screen and (max-width: 1440px) {
+    font-size: 3rem;
+  }
 }
 .stat-text-pink {
   font-family: "SanReg";
   font-size: 2.125rem;
   color: $pink;
+  @media screen and (max-width: 1440px) {
+    font-size: 1.5rem;
+  }
 }
 
 ///////////////////////////////////////////
@@ -286,6 +461,9 @@ body {
   font-weight: bold;
   text-align: center;
   padding: 2rem;
+  @media screen and (max-width: 1440px) {
+    padding: 0;
+  }
 }
 ///////////////////////////////////////////
 //VALUES
@@ -360,6 +538,12 @@ body {
     display: flex;
     gap: 1rem;
     margin: 4rem;
+  }
+  @media screen and (max-width: 1440px) {
+    width: 60%;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 70%;
   }
 }
 .images__left {
@@ -606,7 +790,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 5rem 10rem;
   flex-wrap: wrap;
 }
 //////////////////////////////////

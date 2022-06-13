@@ -12,6 +12,7 @@ import Intro from "./sections/Intro";
 import Jobs from "./sections/Jobs";
 import People from "./sections/People";
 import Values from "./sections/Values";
+import NavbarMobile from "./components/NavbarMobile";
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
   return (
     <div className="App">
       <Navbar setEnglish={setEnglish} english={english} />
+      <NavbarMobile setEnglish={setEnglish} english={english} />
       <Header setEnglish={setEnglish} english={english} />
       <Intro setEnglish={setEnglish} english={english} />
       <About setEnglish={setEnglish} english={english} />
