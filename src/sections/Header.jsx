@@ -13,7 +13,7 @@ const Header = ({ english }) => {
         </h1>
         <a href="#jobs">
           <button className="title-container__button">
-            {!english ? "Aplikuj teraz" : "Apply now"}
+            {!english ? "Sprawdź oferty" : "Search jobs"}
           </button>
         </a>
       </div>

@@ -13,12 +13,18 @@ const Jobs = ({ english }) => {
             : "Are you looking for a career? We have many"}
         </h2>
         <div className="jobs__buttons">
-          <button className="button">Warszawa</button>
+          {/* <button className="button">Warszawa</button>
           <button className="button">Katowice</button>
-          <button className="button">Kraków</button>
-          <button className="button">
-            {!english ? "Praca zdalna" : "Remote work"}
-          </button>
+          <button className="button">Kraków</button> */}
+          <a
+            href="https://www.teleperformance.com/en-us/careers/job-opportunities/ "
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="button">
+              {!english ? "Aplikuj teraz" : "Apply now"}
+            </button>
+          </a>
         </div>
       </div>
     </section>

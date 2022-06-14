@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/images/Logo.png";
+import Logo from "../assets/images/LogoMobile.png";
 import LogoMobileActive from "../assets/images/LogoMobileActive.png";
 
 const NavbarMobile = ({ toggle, isOpen, setIsOpen, english, setEnglish }) => {

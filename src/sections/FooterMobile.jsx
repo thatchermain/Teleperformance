@@ -8,13 +8,15 @@ const FooterMobile = ({ english }) => {
     <footer id="contact" className="footerMobile">
       <div className="footer__content">
         <div className="footer__content--left">
-          <div className="logo">
+          <div className="logo-footer-mobile">
             <img src={FooterLogo} alt="" />
             <p className="email">feww@gmail.com</p>
+            <p className="email"> jobs@pl.teleperformance.com</p>
           </div>
         </div>
         {/* <div className="footer__content--right"> */}
         <p>{!english ? "Nasze biura" : "Our offices"}</p>
+        <br />
         {/* <div className="location-top"> */}
         <div className="location-top--left">
           <p className="city">WARSZAWA</p>
@@ -39,6 +41,9 @@ const FooterMobile = ({ english }) => {
             ul. Wielicka 28 <br /> 30-552 Kraków
           </p>
         </div>
+        <br />
+        <br />
+        <br />
         <div className="social">
           <a
             className="social-icon"

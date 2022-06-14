@@ -20,11 +20,122 @@ body {
 }
 
 ///////////////////////////////////////////
+//COOKIES
+///////////////////////////
+
+.cookies {
+  position: fixed;
+  bottom: 5px;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  width: 100%;
+  font-family: "NotoReg";
+  font-size: 13px;
+}
+.no-cookies {
+  display: none;
+}
+.cookies__content {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  width: 50%;
+  height: 70px;
+  background-color: blue;
+
+  // height: 50%;
+}
+.cookies__bar {
+  margin: 0 auto;
+  // width: 70%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  overflow: hidden;
+  z-index: 1;
+  gap: 1rem;
+}
+.cookies__buttons {
+  display: flex;
+  padding: 0 2rem;
+  gap: 1rem;
+}
+.accept {
+  cursor: pointer;
+  background-color: $black;
+  color: $white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+.privacy {
+  cursor: pointer;
+  background-color: $white;
+  color: $black;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($black, 0.4);
+  width: 100%;
+  height: calc(100vh - 75px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  @media screen and (max-width: 1024px) {
+    height: calc(100vh - 105px);
+  }
+  @media screen and (max-width: 1024px) {
+    height: calc(100vh - 140px);
+  }
+}
+.modal__container {
+  z-index: 100;
+  position: fixed;
+  max-width: 800px;
+  height: 500px;
+  bottom: 10%;
+  background-color: #fff;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  overflow-x: hidden;
+  @media screen and (max-width: 1024px) {
+    bottom: 15%;
+  }
+  @media screen and (max-width: 756px) {
+    bottom: 20%;
+  }
+}
+.modal__container-text {
+  overflow-x: hidden;
+  padding: 2rem 1rem;
+  width: 100%;
+  height: 85%;
+}
+.cookie li {
+  margin-left: 2rem;
+}
+.privacy__button {
+  margin-top: 1rem;
+  background-color: $black;
+  color: $white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+///////////////////////////////////////////
 //NAVBAR
 ///////////////////////////
 .navbar {
   position: relative;
-  z-index: 100;
+  z-index: 10;
   top: 0;
   width: 100%;
   height: 70px;
@@ -268,7 +379,7 @@ body {
 .header {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
   top: -70px;
 
   background: url("./assets/images/Hero.png");
@@ -400,7 +511,7 @@ body {
   justify-content: center;
   align-items: baseline;
   gap: 2rem;
-  padding: 0 0 5rem;
+  padding: 0 0 1rem;
   @media screen and (max-width: 756px) {
     flex-direction: column;
   }
@@ -518,6 +629,31 @@ body {
   padding: 2rem;
   @media screen and (max-width: 1440px) {
     padding: 0;
+  }
+}
+.slider__icon-wrapper {
+  text-align: center;
+}
+.slider__icon {
+  // width: 30px;
+  // height: 30px;
+  font-size: 3rem;
+  color: $fixedNav;
+  animation: slide 2s linear infinite;
+}
+.slider__icon-left {
+  // transform: rotate(180deg);
+}
+.slider__icon-right {
+  // transform: rotate(180deg);
+}
+@keyframes slide {
+  23% {
+    transform: translate(-30%);
+  }
+
+  66% {
+    transform: translate(50%);
   }
 }
 ///////////////////////////////////////////
@@ -926,7 +1062,7 @@ body {
 .jobs__buttons {
   padding: 5rem 0 10rem;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 5rem 11rem;
   flex-wrap: wrap;
@@ -943,19 +1079,20 @@ body {
 }
 .footer__content {
   position: relative;
-  width: 50%;
-  margin: 0 auto;
-  padding: 2rem;
+  // width: 70%;
+  // margin: 0 auto;
+  padding: 2rem 15vw;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   color: $white;
-  gap: 15rem;
+  gap: 10vw;
   font-family: "NotoReg";
   line-height: 25px;
   @media screen and (max-width: 756px) {
     flex-direction: column;
     gap: 0;
     width: 100%;
+    padding: 2rem 5vw;
   }
   &--left {
     display: flex;
@@ -968,10 +1105,10 @@ body {
   gap: 2rem;
 }
 .social-icon {
-  padding: 1rem;
+  padding: 0rem;
 }
 .email {
-  padding: 2rem 0;
+  padding: 0;
 }
 .location-top {
   padding: 2rem 0;
@@ -984,9 +1121,12 @@ body {
 }
 .footer-copyright {
   background-color: $white;
+  padding-left: 15vw;
+  @media screen and (max-width: 756px) {
+    padding-left: 5vw;
+  }
 }
 .footer-copyright-text {
-  text-align: center;
 }
 
 .footerMobile {
@@ -994,4 +1134,10 @@ body {
   @media screen and(min-width:576px) {
     display: none;
   }
+}
+.logo-footer-mobile {
+  padding-bottom: 4rem;
+}
+.logo-footer-mobile img {
+  padding-bottom: 2rem;
 }

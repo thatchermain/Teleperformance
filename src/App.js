@@ -14,6 +14,7 @@ import People from "./sections/People";
 import Values from "./sections/Values";
 import NavbarMobile from "./components/NavbarMobile";
 import FooterMobile from "./sections/FooterMobile";
+import Cookies from "./components/Cookies";
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
       <Navbar setEnglish={setEnglish} english={english} />
       <NavbarMobile setEnglish={setEnglish} english={english} />
       <Header setEnglish={setEnglish} english={english} />
+      <Cookies setEnglish={setEnglish} english={english} />
       <Intro setEnglish={setEnglish} english={english} />
       <About setEnglish={setEnglish} english={english} />
       <Benefits setEnglish={setEnglish} english={english} />
