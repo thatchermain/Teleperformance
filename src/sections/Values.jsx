@@ -33,9 +33,15 @@ const Values = ({ english }) => {
             : "Be part of something bigger than just a job"}
         </p>
       </div>
-      <button className="values__content-button button">
-        {!english ? "Dołącz do nas już dziś!" : "Apply now"}
-      </button>
+      <a
+        href="https://www.teleperformance.com/en-us/careers/job-opportunities/ "
+        target="_blank"
+        rel="noreferrer"
+      >
+        <button className="values__content-button button">
+          {!english ? "Dołącz do nas już dziś!" : "Apply now"}
+        </button>
+      </a>
     </section>
   );
 };

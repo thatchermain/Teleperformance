@@ -18,6 +18,9 @@ body {
   //   zoom: 0.65;
   // }
 }
+a {
+  text-decoration: none;
+}
 
 ///////////////////////////////////////////
 //COOKIES
@@ -64,6 +67,10 @@ body {
   display: flex;
   padding: 0 2rem;
   gap: 1rem;
+}
+.cookies__link {
+  text-decoration: none;
+  color: $pink;
 }
 .accept {
   cursor: pointer;
@@ -996,7 +1003,7 @@ body {
   padding: 2rem 0;
 }
 .csr__content {
-  padding: 5rem 0 10rem;
+  padding: 10rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1138,6 +1145,8 @@ body {
   }
 }
 .footer-copyright-text {
+  padding: 2rem 0;
+  font-family: "NotoReg";
 }
 
 .footerMobile {
