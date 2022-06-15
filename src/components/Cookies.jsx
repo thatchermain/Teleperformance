@@ -33,7 +33,7 @@ const Cookies = ({ english, setEnglish }) => {
                 className="cookies__link"
                 target="_blank"
                 rel="noreferrer"
-                download
+                download="cookiesPl.pdf"
               >
                 cookies.
               </a>{" "}
@@ -47,7 +47,7 @@ const Cookies = ({ english, setEnglish }) => {
                 className="cookies__link"
                 target="_blank"
                 rel="noreferrer"
-                download
+                download="cookiesEn.pdf"
               >
                 cookies.
               </a>{" "}
@@ -63,7 +63,7 @@ const Cookies = ({ english, setEnglish }) => {
             href={!english ? `${TermsFilePl}` : `${TermsFileEn}`}
             target="_blank"
             rel="noreferrer"
-            download
+            download={!english ? `${"termOfUsePl.pdf"}` : `${"termsOfUseEn"}`}
           >
             <button className="privacy" onClick={() => setOpenPrivacy(true)}>
               {!english
