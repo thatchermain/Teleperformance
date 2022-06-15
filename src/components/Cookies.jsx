@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Modal from "./Modal";
-import PrivacyPolicy from "./PrivacyPolicy";
+
 import CookiesPl from "../assets/cookiesPl.pdf";
 import CookiesEn from "../assets/cookiesEn.pdf";
 import TermsFilePl from "../assets/termsOfUsePl.pdf";
@@ -8,21 +7,8 @@ import TermsFileEn from "../assets/termsOfUseEn.pdf";
 
 const Cookies = ({ english, setEnglish }) => {
   const [openModal, setOpenModal] = useState(true);
-  const [openPrivacy, setOpenPrivacy] = useState(false);
   return (
     <div className={openModal ? "cookies" : "no-cookies"}>
-      {/* <Modal open={openModal} english={english} setEnglish={setEnglish} />
-      {openPrivacy ? (
-        <PrivacyPolicy
-          setOpenPrivacy={setOpenPrivacy}
-          openPrivacy={openPrivacy}
-          english={english}
-          setEnglish={setEnglish}
-        />
-      ) : (
-        ""
-      )} */}
-
       <div className="cookies__bar">
         <p className="cookies__info">
           {!english ? (
@@ -65,7 +51,7 @@ const Cookies = ({ english, setEnglish }) => {
             rel="noreferrer"
             download={!english ? `${"termOfUsePl.pdf"}` : `${"termsOfUseEn"}`}
           >
-            <button className="privacy" onClick={() => setOpenPrivacy(true)}>
+            <button className="privacy">
               {!english
                 ? "Przejdź do Polityki Prywatności"
                 : "Go to Privacy Policy"}

@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import CookieEn from "./CookieEn";
-import CookiePl from "./CookiePl";
+import React from "react";
 import PrivacyPolicyEn from "./PrivacyPolicyEn";
 import PrivacyPolicyPl from "./PrivacyPolicyPl";
 

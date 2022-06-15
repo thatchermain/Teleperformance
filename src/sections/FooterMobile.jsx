@@ -13,10 +13,10 @@ const FooterMobile = ({ english }) => {
             <p className="email"> jobs@pl.teleperformance.com</p>
           </div>
         </div>
-        {/* <div className="footer__content--right"> */}
+
         <p>{!english ? "Nasze biura" : "Our offices"}</p>
         <br />
-        {/* <div className="location-top"> */}
+
         <div className="location-top--left">
           <p className="city">WARSZAWA</p>
           <p>
@@ -26,7 +26,7 @@ const FooterMobile = ({ english }) => {
           <br />
         </div>
         <div className="location-top--right"></div>
-        {/* </div> */}
+
         <div className="location-bottom">
           <p className="city">KATOWICE</p>
           <p>
@@ -61,7 +61,6 @@ const FooterMobile = ({ english }) => {
             <img src={Facebook} alt="" />
           </a>
         </div>
-        {/* </div> */}
       </div>
       <div className="footer-copyright">
         <p className="footer-copyright-text">© 2022 Teleperformance</p>
