@@ -33,7 +33,7 @@ const About = ({ english, setEnglish }) => {
               <span className="stat-text-gray">
                 {!english ? "Obecnie zatrudniamy" : "We are a group of"}
               </span>
-              <span className="stat-number text-gradient">1,700</span>
+              <span className="stat-number text-gradient">1700</span>
               <span className="stat-text-pink">
                 {!english ? "pełnych pasji pracowników" : "passionate people"}
               </span>

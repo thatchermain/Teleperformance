@@ -21,7 +21,7 @@ const cards = [
     titlePl: "Idealne miejsce do pracy",
     titleEn: "Providing a great place to work",
     infoPl:
-      "Zależy nam aby nasi pracownicy byli zadowoleni z warunków swojej pracy oraz w pełni usatysfakcjonowani z roli, którą pełnią w organizacji. Dbamy o dostęp do programów wellbeingowych, szkoleniowych, o różnorodność i prawa człowieka.",
+      "Zależy nam, aby nasi pracownicy byli zadowoleni z warunków swojej pracy oraz w pełni usatysfakcjonowani z roli, którą pełnią w organizacji. Dbamy o dostęp do programów wellbeingowych, szkoleniowych, o różnorodność i prawa człowieka.",
     infoEn:
       "We offer employees programs for engagement, well-being, diversity and inclusion, human rights, training, and health and safety.",
     hash: "#Apreferredemployer",

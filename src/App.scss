@@ -779,7 +779,7 @@ a {
     position: absolute;
     top: 90%;
     left: -20%;
-    content: "Wierzymy  w siłę ludzi.";
+    content: "Wierzymy  w siłę ludzi";
     display: flex;
     justify-content: center;
     align-items: center;
@@ -800,6 +800,12 @@ a {
     gap: 1rem;
     font-family: "NotoReg";
     font-size: 1.25rem;
+    @media screen and (max-width: 756px) {
+      margin: 0;
+      width: 240px;
+      height: 430px;
+      text-align: center;
+    }
     &:before {
       position: absolute;
       top: 90%;
@@ -817,6 +823,11 @@ a {
         $gradientLight,
         $gradientDark
       );
+      @media screen and (max-width: 756px) {
+        top: 5%;
+        left: -30%;
+        width: 70%;
+      }
     }
   }
 }
@@ -912,6 +923,13 @@ a {
   width: 100%;
   font-family: "NotoReg";
   font-size: 1.25rem;
+  @media screen and (max-width: 756px) {
+    margin-top: 1rem;
+    width: 260px;
+    height: 210px;
+    left: -40%;
+    top: 2rem;
+  }
   &--top {
     padding-bottom: 1rem;
     &:before {
@@ -931,9 +949,21 @@ a {
         $gradientLight,
         $gradientDark
       );
+      @media screen and (max-width: 756px) {
+        top: -15%;
+        left: 50%;
+        width: 170px;
+        height: 70px;
+      }
     }
   }
   &--bottom {
+    @media screen and (max-width: 756px) {
+      top: -15%;
+      left: 50%;
+      width: 310px;
+      height: 270px;
+    }
     &:before {
       position: absolute;
       top: 55%;
@@ -951,6 +981,12 @@ a {
         $gradientLight,
         $gradientDark
       );
+      @media screen and (max-width: 756px) {
+        top: 180%;
+        left: 40%;
+        width: 170px;
+        height: 70px;
+      }
     }
   }
 }
