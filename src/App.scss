@@ -1104,14 +1104,14 @@ a {
 //////////////////////////////////
 .footer {
   background-color: $violet;
-  @media screen and(max-width:576px) {
+  @media screen and(max-width:756px) {
     display: none;
   }
 }
 .footer__content {
   position: relative;
 
-  padding: 2rem 15vw;
+  padding: 2rem 0 2rem 15vw;
   display: flex;
   justify-content: start;
   color: $white;
@@ -1143,7 +1143,7 @@ a {
 .location-top {
   padding: 2rem 0;
   display: flex;
-  gap: 5rem;
+  gap: 5vw;
 }
 .city {
   font-weight: bold;
@@ -1163,7 +1163,7 @@ a {
 
 .footerMobile {
   background-color: $violet;
-  @media screen and(min-width:576px) {
+  @media screen and(min-width:757px) {
     display: none;
   }
 }

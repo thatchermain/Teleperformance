@@ -10,7 +10,6 @@ const Footer = ({ english }) => {
         <div className="footer__content--left">
           <div className="logo">
             <img src={FooterLogo} alt="" />
-            <p className="email">feww@gmail.com</p>
             <p className="email"> jobs@pl.teleperformance.com</p>
             <br />
           </div>
