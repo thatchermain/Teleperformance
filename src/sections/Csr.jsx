@@ -29,6 +29,7 @@ const Csr = ({ english, setEnglish }) => {
           <div className="csr__content-stats--cert">
             <img src={CertImg} alt="" />
           </div>
+          {/* OLD STATS */}
           <div className="csr__content-stats--procentage">
             <div className="csr__content-stats--procentage-top">
               <span className="procentage-number text-gradient">54%</span>
@@ -50,6 +51,11 @@ const Csr = ({ english, setEnglish }) => {
               </p>
             </div>
           </div>
+          {/* OLD STATS */}
+          {/* ////////////// */}
+          {/* NEW STATS */}
+
+          {/* NEW STATS */}
         </div>
         <div className="csr__content-image">
           <img src={CsrImg} alt="" />
